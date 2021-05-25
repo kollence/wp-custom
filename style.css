@@ -1,0 +1,19 @@
+/*
+Theme name: My Custom Theme
+Theme URI: https://kollence.github.io/
+Autor: kollence
+Author URI: https://kollence.github.io/
+Description: Testiting key: value inputs in variable above for disciptions of theme basic info in style.css
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gun.org/licenses/
+Tags: custom, light, free, easy, admin panelj
+
+*/
+
+.menu-item {
+    padding-top: 0.75rem !important;
+    padding-right: 0px !important;
+    padding-bottom: 0.75rem !important;
+    padding-left: 0px !important;
+}
