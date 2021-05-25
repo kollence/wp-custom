@@ -1,22 +1,34 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="wp-content/themes/wp-my-custom-main/assets/favicon.ico" />
 
-        <?php
-
+<?php
 wp_head();
 ?>
     </head>
-    <body id="page-top">
+    
+    <body id="page-top" <?php body_class(); ?> >
+<?php 
+if (function_exists('wp_body_open')) {
+    wp_body_open();
+}
+?>
+    <div id="page" class="site">
+        <header id="musthead" role="banner" class="site-header">
+            <?php get_template_part('template-parts/header/nav'); ?>
+        </header>
+
+        <div id="content" class="site-content">
+        
+
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="/">
                     <?php 
@@ -38,7 +50,7 @@ wp_head();
                                 'items_wrap' => '<ul class="navbar-nav ml-auto my-2 my-lg-0">%3$s</ul>'
                             )
                         );
-                    ?>
+                    ?> -->
 
                     <!-- <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
@@ -46,11 +58,11 @@ wp_head();
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul> -->
-                </div>
+                <!-- </div>
             </div>
-        </nav>
+        </nav> -->
         <!-- Masthead-->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end">
@@ -63,4 +75,4 @@ wp_head();
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->

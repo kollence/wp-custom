@@ -3,6 +3,7 @@
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
 */
+// alert('test');
 (function ($) {
     "use strict"; // Start of use strict
 

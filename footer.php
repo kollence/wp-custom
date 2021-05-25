@@ -13,9 +13,11 @@
                 </div>
             </div>
         </footer>
+    </div><!-- end of #content header.php -->
+</div><!-- end of #page header.php -->
 
-        <?php
-        wp_footer();
-        ?>
+<?php
+wp_footer();
+?>
     </body>
 </html>
